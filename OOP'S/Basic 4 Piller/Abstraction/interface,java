@@ -1,0 +1,25 @@
+// Interface 1: Animal
+interface Animal {
+    int eyes = 2;              // public static final by default
+    void walk();               // public abstract by default
+}
+
+// Interface 2: Herbivore
+interface Herbivore {
+    // Can include abstract methods or constants
+}
+
+// Class implementing both interfaces
+class Horse implements Animal, Herbivore {
+    public void walk() {
+        System.out.println("walks on 4 legs");
+    }
+}
+
+// Main class
+public class interface {
+    public static void main(String args[]) {
+        Horse horse = new Horse(); // Creating object of Horse
+        horse.walk();              // Calls overridden walk() method
+    }
+}
